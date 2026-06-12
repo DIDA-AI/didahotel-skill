@@ -1,20 +1,14 @@
-# RollingGo Hotel Skills
+# Dida Hotel Skills
 
 [English](#english) | [简体中文](#简体中文)
 
 ```text
-  ██████╗  ██████╗ ██╗     ██╗     ██╗███╗   ██╗ ██████╗  ██████╗  ██████╗ 
-  ██╔══██╗██╔═══██╗██║     ██║     ██║████╗  ██║██╔════╝ ██╔════╝ ██╔═══██╗
-  ██████╔╝██║   ██║██║     ██║     ██║██╔██╗ ██║██║  ███╗██║  ███╗██║   ██║
-  ██╔══██╗██║   ██║██║     ██║     ██║██║╚██╗██║██║   ██║██║   ██║██║   ██║
-  ██║  ██║╚██████╔╝███████╗███████╗██║██║ ╚████║╚██████╔╝╚██████╔╝╚██████╔╝
-  ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝  ╚═════╝ 
-            ██╗  ██╗ ██████╗ ████████╗███████╗██╗     
-            ██║  ██║██╔═══██╗╚══██╔══╝██╔════╝██║     
-            ███████║██║   ██║   ██║   █████╗  ██║     
-            ██╔══██║██║   ██║   ██║   ██╔══╝  ██║     
-            ██║  ██║╚██████╔╝   ██║   ███████╗███████╗
-            ╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚══════╝╚══════╝
+  ██████╗ ██╗██████╗   █████╗     ██╗  ██╗ ██████╗ ████████╗███████╗██╗     
+  ██╔══██╗██║██╔══██╗ ██╔══██╗    ██║  ██║██╔═══██╗╚══██╔══╝██╔════╝██║     
+  ██║  ██║██║██║  ██║ ███████║    ███████║██║   ██║   ██║   █████╗  ██║     
+  ██║  ██║██║██║  ██║ ██╔══██║    ██╔══██║██║   ██║   ██║   ██╔══╝  ██║     
+  ██████╔╝██║██████╔╝ ██║  ██║    ██║  ██║╚██████╔╝   ██║   ███████╗███████╗
+  ╚═════╝ ╚═╝╚═════╝  ╚═╝  ╚═╝    ╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚══════╝╚══════╝
             
   ──●────●────●────●────●────●──
    AI Skills for Claude • Cursor • Copilot
@@ -31,7 +25,7 @@ Search → Detail → Price Confirm → Book → Orders
 
 ## English
 
-Official AI skills for the **RollingGo Hotel CLI** (`@rollinggo/hotel`). They teach agents the correct booking sequence, OAuth 2.1 PKCE login flow, and how to safely trigger end-to-end hotel transactions from the terminal. Works with the [skills CLI](https://github.com/vercel-labs/skills) (Cursor, Claude Code, Codex, Windsurf, Copilot, 40+ agents).
+Official AI skills for the **Dida Hotel CLI** (powered by `@rollinggo/hotel`). They teach agents the correct booking sequence, OAuth 2.1 PKCE login flow, and how to safely trigger end-to-end hotel transactions from the terminal. Works with the [skills CLI](https://github.com/vercel-labs/skills) (Cursor, Claude Code, Codex, Windsurf, Copilot, 40+ agents).
 
 > **Important**: This CLI acts as a bridge to real-world bookings. AI agents are strictly instructed to **NEVER place an order without explicit price confirmation from the user**.
 
@@ -104,7 +98,7 @@ rgh book --reference-no "REF9999" --first-name "San" --last-name "Zhang" --email
 
 ## 简体中文
 
-为 **RollingGo 酒店命令行工具** (`@rollinggo/hotel`) 量身定制的官方 AI 技能库。它能够教会各类 AI 代理正确的酒店预订流程、OAuth 2.1 PKCE 登录流，以及如何安全地在终端内触发真实的酒店交易。兼容 [skills CLI](https://github.com/vercel-labs/skills) 规范，支持 Cursor、Claude Code、Codex、Windsurf、Copilot 等 40 多种主流大模型代理。
+为 **Dida 酒店命令行工具**（基于 `@rollinggo/hotel` 驱动）量身定制的官方 AI 技能库。它能够教会各类 AI 代理正确的酒店预订流程、OAuth 2.1 PKCE 登录流，以及如何安全地在终端内触发真实的酒店交易。兼容 [skills CLI](https://github.com/vercel-labs/skills) 规范，支持 Cursor、Claude Code、Codex、Windsurf、Copilot 等 40 多种主流大模型代理。
 
 > **安全警告**：本工具直接连接真实交易系统。技能库已向 AI 代理下达严格的“死命令”：**在未经用户明确确认价格和支付意愿前，绝不允许私自发起任何订单**。
 
@@ -177,7 +171,7 @@ rgh book --reference-no "REF9999" --first-name "San" --last-name "Zhang" --email
 
 ## Structure / 代码架构
 ```text
-RollingGo-Skills/
+Dida-Skills/
   ├── README.md               # Main orchestrator and SEO entry / 主入口与 SEO 文案
   ├── AGENTS.md               # Directives for AI web crawlers / 针对 AI 爬虫的全局指令
   ├── .github/

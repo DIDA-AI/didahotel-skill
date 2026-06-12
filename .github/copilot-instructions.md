@@ -1,4 +1,4 @@
-When assisting users with the RollingGo Hotel ecosystem:
+When assisting users with the Dida Hotel ecosystem:
 
 - Always use the `rgh` command prefix for CLI interactions.
 - Ensure that the OAuth PKCE flow (`rgh login`) is recognized as the authentication method.
